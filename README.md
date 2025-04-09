@@ -1,38 +1,3 @@
-🧠 Brain Tumor Detection Using Hybrid Transformer-GAN-U-Net Architecture
-This project is an advanced AI-powered system for brain tumor detection and classification from MRI scans. It combines the local feature extraction power of U-Net, the global context understanding of Transformers, and data diversity via GAN-based augmentation into a single synergistic pipeline.
-
-🚀 Key Features:
-🔬 Classifies tumors into: Glioma, Meningioma, Pituitary, or No Tumor.
-
-🧠 Segments the exact tumor region using a Transformer-enhanced U-Net.
-
-🧪 Uses GANs to generate synthetic MRI images for robust training.
-
-🌐 Full-stack deployment with a Flask backend and web frontend.
-
-📊 Visual + textual output: Displays input image, segmented tumor, and diagnosis in text.
-
-🛠️ Tech Stack:
-Frontend: HTML5, CSS3, JavaScript
-
-Backend: Flask (Python)
-
-ML/DL Frameworks: PyTorch, OpenCV, NumPy, Scikit-learn
-
-Model Architecture: Custom U-Net + Transformer + GAN
-
-Deployment: Localhost (can be extended to cloud)
-
-⚡ Just upload an MRI scan, and the system will predict the tumor type (if any) and highlight its exact location.
-
-Would you also like a README.md file created with full markdown structure, images, and setup instructions?
-
-It seems like I can’t do more advanced data analysis right now. Please try again later.
-
-That said, here’s the full README.md content you can directly copy and paste into your GitHub repository:
-
-markdown
-Copy
 # 🧠 Brain Tumor Detection Using Hybrid Transformer-GAN-U-Net Architecture
 
 This is a deep learning-based full-stack project designed for **brain tumor classification and localization** using MRI images. It features a **Transformer-enhanced U-Net model** for segmentation and a **GAN for synthetic data augmentation**, ensuring robust training even on limited datasets.
