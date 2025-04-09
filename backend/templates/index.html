@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <span class="logo">#BrainTumorAI</span>
+            <div class="menu">
+                <button class="btn">Slack us!</button>
+                <button class="btn">Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="main-title">Work with AI, <br> not just a model</h1>
+        
+        <form action="/" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="file" id="file-input" required>
+            <button type="submit" class="upload-btn">Upload & Detect</button>
+        </form>
+
+        {% if original %}
+        <div class="image-container">
+            <div>
+                <h3>Original MRI</h3>
+                <img src="{{ original }}" alt="Original MRI">
+            </div>
+            <div class="segmented">
+                <h3>Segmented Tumor</h3>
+                <img src="{{ segmented }}" alt="Tumor Segmentation">
+            </div>
+        </div>
+
+        <p class="prediction">Prediction: <span class="highlight">{{ output }}</span></p>
+
+        <div class="findings">
+            <h3>Findings:</h3>
+            <p>{{ findings }}</p>
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
